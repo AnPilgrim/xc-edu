@@ -1,0 +1,19 @@
+server:
+  port: 31000
+spring:
+  application:
+    name: xc-service-manage-cms-client
+  data:
+    mongodb:
+      database: xc_cms
+      uri: mongodb://localhost:27017
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+xuecheng:
+  mq:
+    queue: queue_cms_postpage_03
+    routingKey: 5f24109fd4c7a438b98bcbf4
